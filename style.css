@@ -5,8 +5,14 @@
     width: 100%;
 }
 
+/* BODY */
+body{
+    margin: 0px;
+    font-family: 'Inconsolata', monospace;
+}
+
+/* MAIN TITLE */
 h1{
-    font-family: consolas;
     font-size: 2.5em;
     border-bottom: 2px solid black;
     border-right: 2px solid black;
@@ -14,26 +20,32 @@ h1{
     text-align: center;
     margin-top: 0px;
 }
-body{
-    margin: 0px;
-}
-button{
+
+/* PUZZLE CONTAINER */
+#puzzleContainer{
     width: 450px;
-    height: 300px;
-    margin: 2px;
-    transition: all 1s;
-    border: black;
-    font-family: consolas;
-    font-size: 1.2rem;
+    margin: 20px;
 }
-button:hover{
-    transform: scale(1.05);
-}
+
+/* BUTTON CONTAINER */
 #buttonContainer{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 }
+
+#buttonContainer button{
+    width: 150px;
+    height: 50px;
+    margin: 2px;
+    transition: all 1s;
+    border: black;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+/* BACKGROUND COLORS */
 .blue{
     background-color: cyan;
 }

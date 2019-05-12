@@ -3,10 +3,19 @@
     <head>
         <title>Escape Room</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
     </head>
     <body>
         <nav class="sticky">
             <h1>Can You Escape?</h1>
+        </div>
+
+        <div id="puzzleContainer">
+            <h2>Select a Lock</h2>
+            <p id="message"></p>
+            <input id="usercode" type="text" placeholder="Enter Code" disabled>
+            <button id="enter">Enter</button>
         </div>
         <div id="buttonContainer">
             <button id="chineseChess" class="blue">Chinese Chess</button>
