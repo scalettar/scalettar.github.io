@@ -89,7 +89,6 @@ function puzzleAction(event){
             chessButton.disabled = false;
             dominoButton.disabled = false;
             codeBox.hidden = false;
-            enter.disabled = true;
             noLockSelected();
         }
     } else{
