@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Escape Room</title>
+        <title>Unlock</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
     </head>
     <body>
-        <nav class="sticky">
-            <h1>Can You Escape?</h1>
-        </div>
-
-        <div id="puzzleContainer">
-            <h2>Select a Lock</h2>
-            <p id="message"></p>
-            <input id="usercode" type="text" placeholder="Enter Code" disabled>
-            <button id="enter">Enter</button>
+        <div>
+            <h1>Unlock! Board Game Night</h1>
         </div>
         <div id="buttonContainer">
-            <button id="chineseChess" class="blue">Chinese Chess</button>
-            <button id="metronome" class="red">Metronome</button>
-            <button id="pickup" class="pink">Pickup Sticks</button>
-            <button id="scrabble" class="orange">Scrabble</button>
-            <button id="chess" class="yellow">Chess</button>
-            <button id="domino" class="white">Domino</button>
+                <button id="chineseChess" class="blue" disabled>Chinese Chess</button>
+                <button id="metronome" class="red" disabled>Metronome</button>
+                <button id="pickup" class="pink" disabled>Pickup Sticks</button>
+                <button id="scrabble" class="orange" disabled>Scrabble</button>
+                <button id="chess" class="yellow" disabled>Chess</button>
+                <button id="domino" class="white" disabled>Dominoes</button>
+        </div>
+        <div id="puzzleContainer">
+            <h2 id="puzzleTitle" class="dark">Welcome to Board Game Night!</h2>
+            <p id="infoBox">Last week you received a mysterious message inviting you to a board game night. Against your better judgement you decided to attend. However, upon your arrival your host was nowhere to be seen! To make matters worse, as you walk into the game room the door slams shut behind you. You're trapped! As you take in your surroundings you notice a letter on the table.</p>
+            <input id="codeBox" type="text" placeholder="" hidden disabled>
+            <button id="enter">Continue</button>
         </div>
         <script type="text/javascript" src="script.js"></script>
     </body>
