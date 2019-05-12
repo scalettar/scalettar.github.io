@@ -35,7 +35,7 @@ function chineseChess(){
 function metronome(){
     puzzleTitle.innerText = "Metronome (Red Lock)";
     puzzleTitle.className = 'red';
-    infoBox.innerText = "THE UNWELCOME TRAVELER\n\n\"They looked at their tea, they had none to spare,\nThey counted the people, then the cups that were there.\nThe man fell to his knees, and started to wheeze,\nThey all simply sighed, while counting birds nearby.\"";
+    infoBox.innerText = "THE UNWELCOME TRAVELER\n\n\"They looked at their tea, they had none to spare,\nThey counted the people, then the cups that were there.\nThe man fell to his knees, and begged them all, 'Please!'\nThey just let out a sigh, and counted the birds nearby.\"";
     codeBox.placeholder = '3 Digit Code (0-9)';
 }
 
