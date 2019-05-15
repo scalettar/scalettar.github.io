@@ -19,7 +19,7 @@ const dominoButton = document.querySelector('#domino');
 function youWin(){
     puzzleTitle.innerText = "You Won!";
     puzzleTitle.className = 'winner';
-    infoBox.innerText = "Congratulations on your successful escape! I hope you had fun.\n\nHappy birthday dad and happy mother's day mom! You are the best parents anyone could wish for. Thank you for always being there for me and also for all the great times we have spent together. May there be many more!\n\nLove, Daniel";
+    infoBox.innerText = "Congratulations on your successful escape! I hope you enjoyed playing this as much as I enjoyed making it!";
     codeBox.innerText = "";
     codeBox.hidden = true;
     enter.hidden = true;
@@ -56,7 +56,7 @@ function scrabble(){
 function chess(){
     puzzleTitle.innerText = "Chess (Yellow Lock)";
     puzzleTitle.className = 'yellow';
-    infoBox.innerText = "\"His majesty, the King. The entire court has turned against him! Is nowhere safe?\"\n\nKnight: d4\nBishop: a3, b2\nRook: a2\nQueen: d4\nKing: _1, _2, _3, _4";
+    infoBox.innerText = "\"His majesty, the King. The entire court has turned against him!\"";
     codeBox.placeholder = '4 Letter Code (a, b, c, d)';
 }
 
@@ -79,7 +79,6 @@ function noLockSelected(){
 
 function puzzleAction(event){
     if(event.target.innerText === "Continue"){
-        console.log("button was continue");
         if(confirm("Have you read the letter on the table?")){
             enter.innerText = "Enter";
             chineseChessButton.disabled = false;
@@ -101,7 +100,7 @@ function puzzleAction(event){
                 alert("Incorrect code. Please try again.");
             }
         } else if(puzzleTitle.innerText.includes("Red")){
-            if(codeBox.value === "536"){
+            if(codeBox.value === "536" || codeBox.value === "546"){
                 alert("Congratulations! The red lock (metronome) may now be removed.");
                 metronomeButton.disabled = true;
                 noLockSelected();
@@ -145,29 +144,21 @@ function puzzleAction(event){
 }
 
 function switchPuzzle(event){
-    console.log("switchPuzzle");
     if(event.target !== event.currentTarget){
-        console.log("clicked button");
         codeBox.disabled = false;
         codeBox.hidden = false;
         enter.disabled = false;
         if(event.target.id === 'chineseChess'){
-            console.log("chinese chess");
             chineseChess();
         } else if(event.target.id === 'metronome'){
-            console.log("metronome");
             metronome();
         } else if(event.target.id === 'pickup'){
-            console.log("pickup");
             pickupSticks();
         } else if(event.target.id === 'scrabble'){
-            console.log("scrabble");
             scrabble();
         } else if(event.target.id === 'chess'){
-            console.log("chess");
             chess();
         } else if(event.target.id === 'domino'){
-            console.log("domino");
             domino();
         }
     }
