@@ -1,0 +1,27 @@
+body {
+    font-family: 'Lexend Mega', sans-serif;
+    background: whitesmoke;
+}
+
+.center {
+    text-align: center;
+}
+
+.maintenance {
+    /* 2077 */
+    /* color: #02d8f3;
+    background-color: #0e0e0e */
+  
+    /* Andromeda */
+    /* color: #00ffb7;
+    background: #23262e; */
+  
+    /* Bright */
+    /* color: #ff0072;
+    background: #000000; */
+  
+    /* Super */
+    color: orangered;
+    background: #000000;
+  }
+  
